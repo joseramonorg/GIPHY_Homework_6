@@ -40,7 +40,7 @@ function removeLastButton(){
 // Function that displays all of the gifs
 function displayGifs(){
     var animal = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
     console.log(queryURL); // displays the constructed url
     $.ajax({
         url: queryURL,
